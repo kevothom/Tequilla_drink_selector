@@ -1,0 +1,19 @@
+your_name = input ("What is your name? ") # input statement asking for user's name
+your_age = int (input("Welcome " + your_name.upper() + ", what is your age?: ")) # input statement asking for user's age
+if your_age >= 21: # if statement checks to see if input age is 21 or older
+    print('Congratulations ' + your_name.upper() + ', it looks like you are of legal age to drink!') # this statement is printed if user's are 21 or older
+else:
+    print(your_name.upper() + " sorry, but you are not of legal age and we cannot serve you alcohol here. ") # this statement is printed if user's are under 21 yrs. old
+    
+have_id = input (your_name.upper() + " do you have your id? Type Yes or No: ") # input statement asking the user's for their id
+if have_id == 'Yes': # if statement checks if users has id
+    print('Thanks ' + your_name.upper() + ', thanks for showing me your id!') # this statement is printed if user's have their id
+else:
+    print(your_name.upper() + " sorry, but we cannot serve you alcohol here without ID. ") # this statement is printed if user's doesn't have their id
+    print(your_name.upper() + " would you like to order something else besides alcohol?") # this statement is printed if user's doesn't have their id
+type_or_drink = input ("What drink will you be ordering this evening?: ") # this statement is printed asking user's what drink they will be ordering 
+price = 11.99 + 1.45 # calculation of cost of Tequilla and the taxes applied
+if type_or_drink == 'Tequilla':
+    print('The cost of your Tequilla will be: $' + str(price)) # this statement is printed if user's order Tequilla (with the price added to statement)
+else:
+    print("So what kind of drink will you be ordering?: ") # this statement is printed if user's doesn't order Tequilla
